@@ -1,0 +1,7 @@
+procedure(saveAsXML(obj file_name)
+	prog((file)
+		file=outfile(file_name)
+		saveParser(obj file 0)
+		close(file)
+	)
+)
