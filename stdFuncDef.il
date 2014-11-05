@@ -369,7 +369,7 @@ procedure(enable(obj)
 	let(()
 		if(defstructp(obj 'ccObj)
 			then 
-				obj->visible=nil
+				obj->visible=t
 		)
 	)
 )
@@ -378,7 +378,7 @@ procedure(disable(obj)
 	let(()
 		if(defstructp(obj 'ccObj)
 			then 
-				obj->visible=t
+				obj->visible=nil
 		)
 	)
 )
